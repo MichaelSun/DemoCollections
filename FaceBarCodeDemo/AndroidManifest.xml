@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.robert.image.compose.demo"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17"/>
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher">
+
+        <activity
+            android:name="com.com.robert.image.demonew.FaceCompose1Activity"
+            android:label="脸码">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".FaceComposeActivity"
+            android:label="脸码">
+        </activity>
+
+        <activity
+            android:name="ImageComposeDemoActivity"
+            android:label="@string/app_name">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".FontActivity"
+            android:label="文字处理">
+        </activity>
+        <activity android:name=".TextCodeActivity"/>
+        <activity android:name="com.com.robert.image.demonew.ImageFilterActivity"/>
+        <activity android:name=".PixelActivity"/>
+        <activity android:name="com.com.robert.image.demonew.GradientActivity"/>
+        <activity android:name="com.com.robert.image.demonew.BaseActivity"/>
+        <activity android:name="com.com.robert.image.demonew.QRCodeMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
